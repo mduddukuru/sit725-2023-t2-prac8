@@ -1,15 +1,15 @@
 const cardList = [
     {
     title: "Kitten 2",
-    image: "images/kitten-2.jpg",
+    image: "kitten2.jpeg",
     link: "About Kitten 2",
-    desciption: "Demo desciption about kitten 2"
+    desciption: "Here is Kitten 2, hope you enjoy the pictures!"
     },
     {
     title: "Kitten 3",
-    image: "images/kitten-3.jpg",
+    image: "kitten3.jpeg",
     link: "About Kitten 3",
-    desciption: "Demo desciption about kitten 3"
+    desciption: "Here is Kitten 3, hope you enjoy the pictures!"
     }
     ]
    
@@ -21,7 +21,7 @@ const cardList = [
     '<span class="card-title activator grey-text text-darken-4">'+item.title+'<i class="material-icons right">more_vert</i></span><p><a href="#">'+item.link+'</a></p></div>'+
     '<div class="card-reveal">'+
     '<span class="card-title grey-text text-darken-4">'+item.title+'<i class="material-icons right">close</i></span>'+
-    '<p class="card-text">'+item.desciption+'</p>'+
+    '<p class="card-text black-text">'+item.desciption+'</p>'+
     '</div></div></div>';
     $("#card-section").append(itemToAppend)
     });
