@@ -8,7 +8,7 @@
     '<span class="card-title activator grey-text text-darken-4">'+item.title+'<i class="material-icons right">more_vert</i></span><p><a href="#">'+item.subtitle+'</a></p></div>'+
     '<div class="card-reveal">'+
     '<span class="card-title grey-text text-darken-4">'+item.title+'<i class="material-icons right">close</i></span>'+
-    '<p class="card-text black-text">'+item.desciption+'</p>'+
+    '<p class="card-text black-text">'+item.description+'</p>'+
     '</div></div></div>';
     $("#card-section").append(itemToAppend)
     });
