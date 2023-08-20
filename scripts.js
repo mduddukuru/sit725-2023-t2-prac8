@@ -39,7 +39,7 @@ function postCat(cat){
 }
 
 function getAllCats(){
-    $.get('/api/cats', (response) => {
+    $.get('/api/cat', (response) => {
         if (response.statusCode === 200) {
             addCards(response.data);
         }
