@@ -18,4 +18,13 @@ const getAllCats = (req,res) => {
     })
 };
 
-module.exports = {postCat, getAllCats};
+const deleteCat = (req,res) => {
+    let cat = req.body;
+    collection.deleteCat(cat, (err, result) => {
+        if (!err) {
+            res.json({statusCode:202, data:result, message: 'deleted'});
+        }
+    });
+}
+
+module.exports = {postCat, getAllCats, deleteCat};
