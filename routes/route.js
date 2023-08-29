@@ -13,6 +13,10 @@ route.get('/', (req,res) => {
    controller.getAllCats(req,res);
 })
 
+route.delete('/', (req,res) => {
+    controller.deleteCat(req,res);
+})
+
 
 
 module.exports = route;
