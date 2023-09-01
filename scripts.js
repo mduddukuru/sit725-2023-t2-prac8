@@ -13,6 +13,14 @@
     $("#card-section").append(itemToAppend)
     });
     }
+
+
+let socket = io();
+socket.on('number', (msg) => {
+    console.log('Random number: ' + msg);
+});
+
+
     const submitForm = () =>
 {
     let formData = {}
